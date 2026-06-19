@@ -1,5 +1,16 @@
-div{
-    height: 50 px;
-    width: 50 px;
-    background-color: rgb(231, 18, 18);
+.loader{
+    border-radius: 50%;
+    border: 15px dotted rgb(223, 203, 203);
+    border-top: 15px dotted rgb(56, 55, 63);
+    height: 250px;
+    width: 250px;
+    
+    /* background-color: rgb(213, 17, 174) ; */
+    animation: spin 2s steps(7) 1s infinite normal;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
 }
